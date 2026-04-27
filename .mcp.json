@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--headless",
+        "--isolated",
+        "--no-sandbox",
+        "--ignore-https-errors",
+        "--caps", "vision,pdf",
+        "--save-trace",
+        "--output-dir", "./.playwright-output",
+        "--device", "iPhone 15",
+        "--timeout-action", "8000",
+        "--timeout-navigation", "30000",
+        "--console-level", "warning"
+      ]
+    }
+  }
+}

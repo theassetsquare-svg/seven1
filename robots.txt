@@ -1,0 +1,63 @@
+# 대전세븐나이트 원숭이 — 모든 검색엔진 풀 크롤 허용
+User-agent: *
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Naver
+User-agent: Yeti
+Allow: /
+User-agent: NaverBot
+Allow: /
+
+# Daum / Kakao
+User-agent: Daumoa
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# AI 검색엔진 (ChatGPT, Claude, Perplexity, Google AI Overviews 등)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+Sitemap: https://seven1-2jn.pages.dev/sitemap.xml

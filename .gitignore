@@ -1,0 +1,18 @@
+# Playwright MCP runtime artifacts
+.playwright-output/
+.playwright-mcp/
+trace.zip
+playwright-report/
+test-results/
+
+# 임시 빌드 산출물
+.tmp/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 에디터
+.vscode/settings.json
+.idea/

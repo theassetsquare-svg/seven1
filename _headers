@@ -1,0 +1,54 @@
+# Cloudflare Pages 헤더 — SEO·보안·캐시
+# 주의: CF Pages는 _headers 규칙을 *append* 만 하고 *replace* 안 함.
+# 그래서 /* 에는 모든 경로 공통 보안 헤더만 두고,
+# Cache-Control 은 경로별로만 명시 (중복 방지).
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
+  X-Frame-Options: SAMEORIGIN
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-site
+
+# HTML — 검색 인덱스 빠른 갱신용 무캐시
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# 정적 자원 — 1주 강캐시 (immutable)
+/style.css
+  Cache-Control: public, max-age=604800, immutable
+/main.js
+  Cache-Control: public, max-age=604800, immutable
+/og.png
+  Cache-Control: public, max-age=604800, immutable
+/favicon.ico
+  Cache-Control: public, max-age=604800, immutable
+/favicon.svg
+  Content-Type: image/svg+xml
+  Cache-Control: public, max-age=604800, immutable
+/apple-touch-icon.png
+  Cache-Control: public, max-age=604800, immutable
+/icon-192.png
+  Cache-Control: public, max-age=604800, immutable
+/icon-512.png
+  Cache-Control: public, max-age=604800, immutable
+
+# 매니페스트 — 1시간
+/site.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+# 크롤러용 파일 — 1시간 (변경 시 빠른 반영)
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600

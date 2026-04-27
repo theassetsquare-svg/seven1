@@ -1,0 +1,128 @@
+:root{
+  --bg:#0a1410;
+  --bg-2:#0f1c17;
+  --fg:#f5f5f5;
+  --dim:#94a89e;
+  --accent:#34d399;       /* 에메랄드 */
+  --accent-2:#06b6d4;     /* 시안 */
+  --accent-soft:#a7f3d0;
+  --line:#1a2a23;
+  --maxw:760px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,'Pretendard','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  -webkit-font-smoothing:antialiased;line-height:1.6;
+}
+body{padding-bottom: calc(80px + var(--safe-bottom));}
+
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* 키보드 포커스 — 모든 인터랙티브 요소 가시화 (a11y) */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible{
+  outline:3px solid var(--accent);
+  outline-offset:3px;
+  border-radius:6px;
+}
+
+.skip{position:absolute;left:-9999px}
+.skip:focus,
+.skip:focus-visible{left:8px;top:8px;background:var(--accent);color:#062018;padding:8px 12px;border-radius:6px;z-index:1000;outline:none}
+
+.topbar{
+  position:sticky;top:0;z-index:50;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 16px;background:rgba(10,20,16,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.brand{font-size:15px}
+.brand strong{color:var(--accent)}
+.dim{color:var(--dim)}
+.topcall{font-weight:700;color:var(--accent);font-size:14px;white-space:nowrap}
+
+main{max-width:var(--maxw);margin:0 auto;padding:24px 18px}
+
+.hero{padding:32px 0 24px;text-align:center;border-bottom:1px solid var(--line)}
+.hero h1{font-size:32px;line-height:1.25;margin:0 0 14px;font-weight:900;letter-spacing:-.5px}
+.hero .accent{
+  background:linear-gradient(90deg,var(--accent-soft),var(--accent),var(--accent-2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.lede{font-size:17px;margin:10px 0;color:#e6efeb}
+.lede.strong{color:var(--accent);font-weight:700}
+.cta{
+  display:inline-block;margin:18px auto 8px;
+  padding:18px 28px;border-radius:14px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#062018;font-weight:900;font-size:18px;letter-spacing:-.3px;
+  box-shadow:0 8px 28px rgba(52,211,153,.35), 0 2px 0 rgba(0,0,0,.2) inset;
+  transition:transform .15s ease;
+}
+.cta:hover{transform:translateY(-1px);text-decoration:none}
+.cta.big{font-size:22px;padding:22px 32px;width:100%;max-width:420px}
+.micro{color:var(--dim);font-size:13px;margin-top:4px}
+
+section{padding:28px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-size:22px;margin:0 0 14px;letter-spacing:-.3px}
+
+.bullets{list-style:none;padding:0;margin:0}
+.bullets li{padding:10px 0;border-bottom:1px dashed var(--line)}
+.bullets li:last-child{border-bottom:0}
+.bullets b{color:var(--accent)}
+
+.steps{padding-left:20px;margin:0}
+.steps li{padding:6px 0}
+.steps b{color:var(--accent)}
+
+.meta{display:grid;grid-template-columns:100px 1fr;gap:8px 12px;margin:0;font-size:15px}
+.meta dt{color:var(--dim)}
+.meta dd{margin:0}
+
+.faq details{
+  background:var(--bg-2);border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;margin:10px 0;
+}
+.faq summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"▸ ";color:var(--accent)}
+.faq details[open] summary::before{content:"▾ "}
+.faq p{margin:10px 0 0;color:#dcdcdc}
+
+.reviews .rev{
+  background:var(--bg-2);border-left:4px solid var(--accent-2);
+  padding:14px 18px;margin:12px 0;border-radius:0 10px 10px 0;
+}
+.reviews .rev p{margin:0 0 6px;font-size:15px;color:#e6efeb;line-height:1.55}
+.reviews .rev cite{font-style:normal;color:var(--accent);font-size:13px;font-weight:700}
+
+.last-cta{text-align:center;padding:36px 0}
+.last-cta h2{font-size:20px}
+
+.foot{max-width:var(--maxw);margin:0 auto;padding:24px 18px;color:var(--dim);font-size:13px;text-align:center}
+.foot p{margin:6px 0}
+
+.floating-call{
+  position:fixed;left:0;right:0;bottom:0;z-index:100;
+  display:flex;align-items:center;justify-content:center;
+  padding: 16px 16px calc(16px + var(--safe-bottom));
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#062018 !important;font-weight:900;font-size:17px;letter-spacing:-.2px;
+  box-shadow:0 -6px 24px rgba(0,0,0,.5);
+  text-decoration:none !important;
+}
+.floating-call:hover{filter:brightness(1.05)}
+
+@media (min-width:720px){
+  .hero h1{font-size:40px}
+  .floating-call{font-size:18px}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .cta{transition:none}
+}
