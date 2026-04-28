@@ -55,7 +55,7 @@ main{max-width:var(--maxw);margin:0 auto;padding:24px 18px}
   aspect-ratio:1/1;object-fit:cover;
 }
 @media (min-width:720px){
-  .hero-img{ width:220px;height:220px }
+  .hero-img{ width:360px;height:360px }
 }
 .hero h1{font-size:32px;line-height:1.25;margin:0 0 14px;font-weight:900;letter-spacing:-.5px}
 .hero .accent{
