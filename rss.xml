@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>대전세븐나이트 W.T 원숭이 직통 — 둔산동 1등 부킹률</title>
+    <link>https://seven1-2jn.pages.dev/</link>
+    <atom:link href="https://seven1-2jn.pages.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <description>대전 둔산동 세븐나이트 W.T 원숭이 직통 라인. 4인1조 즉시 부킹·합석·테이블 예약. 평균 매칭 3분, 누적 후기 247건, 평점 4.9.</description>
+    <language>ko-KR</language>
+    <copyright>© 대전세븐나이트 원숭이</copyright>
+    <pubDate>Fri, 01 May 2026 00:00:00 +0900</pubDate>
+    <lastBuildDate>Fri, 01 May 2026 00:00:00 +0900</lastBuildDate>
+    <ttl>60</ttl>
+    <image>
+      <url>https://seven1-2jn.pages.dev/og.png</url>
+      <title>대전세븐나이트 W.T 원숭이 직통</title>
+      <link>https://seven1-2jn.pages.dev/</link>
+      <width>1200</width>
+      <height>1200</height>
+    </image>
+    <generator>대전세븐나이트 RSS</generator>
+    <category>대전세븐나이트</category>
+    <category>둔산동 세븐나이트</category>
+    <category>대전 부킹</category>
+
+    <item>
+      <title>대전세븐나이트 W.T 원숭이 직통 — 둔산동 1등 부킹률·실시간 자리 안내</title>
+      <link>https://seven1-2jn.pages.dev/</link>
+      <guid isPermaLink="true">https://seven1-2jn.pages.dev/</guid>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0900</pubDate>
+      <dc:creator>W.T 원숭이</dc:creator>
+      <category>대전세븐나이트</category>
+      <description><![CDATA[대전세븐나이트 둔산동 직접 가본 사람만 아는 부킹 명소. W.T 원숭이가 토요일 마지막 자리까지 책임지는 4인1조 직통 라인. 후기 247건 누적, 평균 매칭 3분, 평점 4.9. 24시간 카톡·전화 직통 응대.]]></description>
+      <content:encoded><![CDATA[
+        <p><strong>대전세븐나이트 W.T 원숭이 직통</strong>은 대전 둔산동 세븐나이트 웨이터 "원숭이"가 운영하는 직통 예약 라인입니다.</p>
+        <ul>
+          <li>누적 후기 247건 / 평점 4.9</li>
+          <li>평균 매칭 3분 — 입장 직후 비빌 곳 즉시</li>
+          <li>토요일 마지막 자리 보장 (단골 라인)</li>
+          <li>여성팀 매너 매칭 — 같은 시간대 매너 좋은 남성팀과 직접 매칭</li>
+          <li>외지(세종·청주·천안) 우대 라인 별도</li>
+          <li>예약 = 워크인 동가, 수수료 0원</li>
+        </ul>
+        <p>전화 010-3242-1504 (24시간 카톡·전화, 평균 응답 1분)</p>
+      ]]></content:encoded>
+    </item>
+  </channel>
+</rss>

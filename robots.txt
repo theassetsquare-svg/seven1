@@ -61,3 +61,4 @@ User-agent: Meta-ExternalFetcher
 Allow: /
 
 Sitemap: https://seven1-2jn.pages.dev/sitemap.xml
+Sitemap: https://seven1-2jn.pages.dev/rss.xml
