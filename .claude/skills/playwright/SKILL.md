@@ -12,7 +12,7 @@ description: 실제 브라우저(Playwright MCP)로 라이브 사이트 검증, 
 ### 1. 라이브 사이트 시각 확인
 ```
 browser_navigate → https://seven1-2jn.pages.dev/
-browser_wait_for(text="")
+browser_wait_for(text="010-3242-1504")
 browser_take_screenshot(filename="live-mobile.png", fullPage=true)
 ```
 풀페이지 캡처로 hero → CTA → FAQ → 후기 → 푸터까지 모바일 시점 한 번에 검증.
@@ -23,7 +23,7 @@ browser_navigate → URL
 browser_snapshot   # accessibility tree로 요소 ref 받기
 browser_click(ref="<floating-call ref>")
 ```
-클릭 시 `tel:` 네비게이션이 떠야 함 (브라우저는 차단하지만 네트워크 로그에서 확인).
+클릭 시 `tel:010-3242-1504` 네비게이션이 떠야 함 (브라우저는 차단하지만 네트워크 로그에서 확인).
 
 ### 3. SEO 메타·JSON-LD 렌더 확인 (한 번에)
 ```

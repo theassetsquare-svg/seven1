@@ -19,7 +19,7 @@ description: WCAG 2.1 AA 접근성 감사 — 시맨틱 HTML, ARIA, 키보드 �
   ...
 </main>
 <footer class="foot">...</footer>
-<a class="floating-call" href="https://theassetsquare.com/">...</a>
+<a class="floating-call" href="tel:...">...</a>
 ```
 - `<div>` 남발 대신 `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`
 - 클릭 가능한 요소는 `<button>` 또는 `<a>` (절대 `<div onclick>` 금지)
@@ -67,7 +67,7 @@ description: WCAG 2.1 AA 접근성 감사 — 시맨틱 HTML, ARIA, 키보드 �
 - 동적 변경: `aria-live="polite"` 또는 `aria-live="assertive"`
 - 모달: `role="dialog" aria-modal="true" aria-labelledby="..."`
 - 토글 버튼: `aria-pressed` / `aria-expanded`
-- 전화 링크: `aria-label="원숭이 직통 "` (스크린리더 풀 안내)
+- 전화 링크: `aria-label="원숭이 직통 010-3242-1504"` (스크린리더 풀 안내)
 
 ### 6. 폼 (이 프로젝트는 폼 없음 — 추가 시 적용)
 - 모든 input에 `<label>`
@@ -106,5 +106,5 @@ description: WCAG 2.1 AA 접근성 감사 — 시맨틱 HTML, ARIA, 키보드 �
 
 - **`outline: none` 단독 사용** → 키보드 사용자 위치 잃음, **반드시 대체 표시**
 - **장식 SVG에 alt 누락** → 스크린리더가 읽음, `aria-hidden="true"` 명시
-- **`<a href="https://theassetsquare.com/">` aria-label 없음** → "" 한 자리씩 읽음, label로 자연 발음 유도
+- **`<a href="tel:...">` aria-label 없음** → "01032421504" 한 자리씩 읽음, label로 자연 발음 유도
 - **모바일 터치 영역 < 44×44px** → WCAG 위반, CTA는 최소 48×48

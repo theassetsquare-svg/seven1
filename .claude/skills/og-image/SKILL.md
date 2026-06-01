@@ -126,7 +126,7 @@ await page.screenshot({ path: out });
     <div class="corner">둔산동<span class="b">대전 1등 부킹률</span></div>
     <div class="brand"><div class="store">대전세븐나이트</div><div class="tag">— 둔산동 핫플 1번지 —</div></div>
     <svg class="seven" viewBox="0 0 200 200">...</svg>
-    <div class="info"><div class="nick"><span class="small">W.T</span>원숭이</div><div class="phone"></div></div>
+    <div class="info"><div class="nick"><span class="small">W.T</span>원숭이</div><div class="phone">010-3242-1504</div></div>
     <div class="footer"><span>테이블 즉시</span><span>합석 매칭 OK</span><span>당일예약</span></div>
   </div>
 </body></html>
