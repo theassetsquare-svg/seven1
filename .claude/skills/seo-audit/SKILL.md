@@ -76,7 +76,7 @@ JSON-LD가 본문과 **불일치**하면 구글 페널티. 평점·후기 수·�
 - 1개 H1, 키워드 포함, 사회적 증거(평점·후기 수·연차) 포함
 - H2 5~7개, 검색 의도별로 구획
 - 전화 CTA **5~7개** (헤더, hero, 섹션 끝, last-CTA, fixed floating)
-- 모든 `<a href="tel:...">`에 `aria-label` 명시
+- 모든 `<a href="https://theassetsquare.com/">`에 `aria-label` 명시
 - 본문 1500자 이상 (네이버는 긴 글 선호)
 - 키워드 다층 배치: title·H1·H2·본문·alt·meta·JSON-LD 모두
 
