@@ -5,7 +5,7 @@ description: Full SEO audit for Korean local-business sites — title/meta/canon
 
 # SEO Audit — 풀체크
 
-이 스킬은 **대전세븐나이트 W.T 원숭이 직통 (`seven1-2jn.pages.dev`)** 같은 한국 로컬 비즈니스 사이트를 기준으로 작성되었습니다. 다른 사이트도 동일한 체크리스트로 진행.
+이 스킬은 **대전세븐나이트 영탁 직통 (`seven1-2jn.pages.dev`)** 같은 한국 로컬 비즈니스 사이트를 기준으로 작성되었습니다. 다른 사이트도 동일한 체크리스트로 진행.
 
 ## ✅ 8단계 체크리스트
 

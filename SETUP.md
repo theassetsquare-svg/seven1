@@ -33,7 +33,7 @@ git push -u origin main
 ```
 
 **이후 변수만 바꾸기** — Claude Code 새 세션에서 아래 한 줄 :
-> *"index.html, style.css, og.png, favicon, llms.txt, sitemap.xml 모두에서 도메인 `seven1-2jn.pages.dev`를 `<새도메인>` 으로, 전화번호 `010-3242-1504`을 `<새번호>` 으로, 매장명·닉네임 `대전세븐나이트 / 원숭이`을 `<새매장 / 새닉>` 으로 바꿔서 푸시해줘. og.png과 favicon은 새 정보로 다시 그려줘."*
+> *"index.html, style.css, og.png, favicon, llms.txt, sitemap.xml 모두에서 도메인 `seven1-2jn.pages.dev`를 `<새도메인>` 으로, 전화번호 `010-7770-0869`을 `<새번호>` 으로, 매장명·닉네임 `대전세븐나이트 / 영탁`을 `<새매장 / 새닉>` 으로 바꿔서 푸시해줘. og.png과 favicon은 새 정보로 다시 그려줘."*
 
 ---
 
@@ -45,14 +45,14 @@ git push -u origin main
 다음 GitHub 저장소를 참고로 새 사이트를 만들어줘:
 https://github.com/theassetsquare-svg/seven
 
-이 저장소에는 대전세븐나이트 W.T 원숭이용 SEO 풀세팅 사이트가 있어.
+이 저장소에는 대전세븐나이트 영탁용 SEO 풀세팅 사이트가 있어.
 같은 구조로 새 사이트를 만들되, 아래 변수만 바꿔서 적용해:
 
 [변수]
 - 메인 도메인: <여기에 새 도메인>      예) seven-new.pages.dev
 - 매장명:     <여기에 새 매장명>      예) 대구세븐나이트
 - 담당 W.T:   <여기에 새 닉네임>      예) 호랑이
-- 전화번호:   <여기에 010-xxxx-xxxx>  예) 010-1234-5678
+- 전화번호:   <여기에 010-xxxx-xxxx>  예) 010-7770-0869
 - 지역:       <여기에 지역>           예) 대구 / 동성로
 - 영업지역:   <여기에 권역>           예) 대구·경북·경남
 
@@ -91,8 +91,8 @@ https://github.com/theassetsquare-svg/seven
 |---|---|---|
 | 도메인 | `seven1-2jn.pages.dev` | `<새도메인>` |
 | 매장명 | `대전세븐나이트` | `<새매장>` |
-| W.T 닉 | `원숭이` | `<새닉>` |
-| 전화번호 | `010-3242-1504` | `<새번호>` |
+| W.T 닉 | `영탁` | `<새닉>` |
+| 전화번호 | `010-7770-0869` | `<새번호>` |
 | 지역 (시) | `대전` / `대전광역시 서구` / `둔산동` | `<새시/구/동>` |
 | 권역 | `대전 · 세종 · 충청` | `<새권역>` |
 
@@ -119,14 +119,14 @@ sed -i 's|seven-97b\.pages\.dev|<새도메인>|g' \
   index.html robots.txt sitemap.xml llms.txt site.webmanifest
 
 # 전화번호
-sed -i 's|010-3242-1504|<새번호>|g' \
+sed -i 's|010-7770-0869|<새번호>|g' \
   index.html llms.txt site.webmanifest
-sed -i 's|+82-10-3242-1504|+82-<새번호 국제>|g' index.html
+sed -i 's|+82-10-7770-0869|+82-<새번호 국제>|g' index.html
 
 # 매장명·닉
 sed -i 's|대전세븐나이트|<새매장>|g' \
   index.html llms.txt site.webmanifest robots.txt sitemap.xml
-sed -i 's|원숭이|<새닉>|g' \
+sed -i 's|영탁|<새닉>|g' \
   index.html llms.txt site.webmanifest
 
 # 지역
@@ -236,8 +236,8 @@ seven/
 도메인:     https://seven1-2jn.pages.dev/
 GitHub:     https://github.com/theassetsquare-svg/seven
 매장명:     대전세븐나이트
-W.T 닉:     원숭이
-전화:       010-3242-1504
+W.T 닉:     영탁
+전화:       010-7770-0869
 지역:       대전광역시 서구 둔산동
 권역:       대전 · 세종 · 충청
 영업시간:   20:00 – 05:00 (연중무휴)
