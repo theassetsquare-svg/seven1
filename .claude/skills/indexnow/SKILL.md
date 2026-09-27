@@ -25,7 +25,7 @@ echo "Key file: ${NEW_KEY}.txt (content: $NEW_KEY)"
 ### A. 단일 URL
 ```bash
 KEY=$(ls /home/user/seven1/*.txt | grep -E '/[a-f0-9]{32}\.txt$' | head -1 | xargs basename | sed 's/\.txt$//')
-DOMAIN='seven1-2jn.pages.dev'
+DOMAIN='x.nolcool.com'
 
 curl -sX POST "https://api.indexnow.org/IndexNow" \
   -H "Content-Type: application/json; charset=utf-8" \
@@ -77,7 +77,7 @@ curl -s "https://api.indexnow.org/indexnow?url=https://$DOMAIN/&key=$KEY"
 ```bash
 #!/bin/sh
 KEY=$(ls $(git rev-parse --show-toplevel)/*.txt | grep -E '/[a-f0-9]{32}\.txt$' | head -1 | xargs basename | sed 's/\.txt$//')
-DOMAIN='seven1-2jn.pages.dev'
+DOMAIN='x.nolcool.com'
 sleep 90  # CF Pages 배포 대기
 curl -sX POST "https://api.indexnow.org/IndexNow" -H "Content-Type: application/json" \
   -d "{\"host\":\"$DOMAIN\",\"key\":\"$KEY\",\"keyLocation\":\"https://$DOMAIN/${KEY}.txt\",\"urlList\":[\"https://$DOMAIN/\"]}"
@@ -99,7 +99,7 @@ echo -n "$NEW_KEY" > ${NEW_KEY}.txt
 ## 5. 검증 — 키 파일 fetch 가능한가?
 
 ```bash
-DOMAIN='seven1-2jn.pages.dev'
+DOMAIN='x.nolcool.com'
 KEY='83d34f87945b3ee6beb382d9c7b1d2f9'
 curl -s https://$DOMAIN/${KEY}.txt
 # 출력: 83d34f87945b3ee6beb382d9c7b1d2f9 (키와 동일해야 함)

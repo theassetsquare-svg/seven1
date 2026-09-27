@@ -1,7 +1,7 @@
 # 대전세븐나이트 영탁 사이트 — 작업 핸드오프 문서
 
 > 마지막 업데이트: 2026-04-27
-> 메인 도메인: https://seven1-2jn.pages.dev/
+> 메인 도메인: https://x.nolcool.com/
 > 담당: 영탁 / **010-7770-0869**
 > GitHub: https://github.com/theassetsquare-svg/seven
 > 호스팅: Cloudflare Pages (main 푸시 → 자동 배포, 보통 10초 내 반영)
@@ -18,7 +18,7 @@
 
 ### 1) GitHub 저장소 + Cloudflare Pages 배포
 - GitHub: `theassetsquare-svg/seven` 생성·연결
-- main 브랜치 → Cloudflare Pages 자동 배포 → `https://seven1-2jn.pages.dev/`
+- main 브랜치 → Cloudflare Pages 자동 배포 → `https://x.nolcool.com/`
 
 ### 2) 메인 페이지 SEO 풀세팅 (`index.html`)
 - `<html lang="ko">` 한국어 명시
@@ -161,12 +161,12 @@
 |:-:|---|:-:|---|
 | 1 | Google: 대전세븐나이트 | ❌ | 인덱스 전 — 정상 |
 | 2 | Google: 대전세븐나이트 영탁 | ❌ | 인덱스 전 |
-| 3 | Google: site:seven1-2jn.pages.dev | ✅ | 사이트 인지됨 |
+| 3 | Google: site:x.nolcool.com | ✅ | 사이트 인지됨 |
 | 4 | Naver: 대전세븐나이트 | ❌ | 인덱스 전 |
 | 5 | Naver: 대전세븐나이트 영탁 | ❌ | 인덱스 전 |
-| 6 | Naver: site:seven1-2jn.pages.dev | ✅ | 사이트 인지됨 |
+| 6 | Naver: site:x.nolcool.com | ✅ | 사이트 인지됨 |
 | 7 | Bing: 대전세븐나이트 | ❌ | 인덱스 전 |
-| 8 | Bing: site:seven1-2jn.pages.dev | ✅ (6회) | 부분 인덱싱 진행 |
+| 8 | Bing: site:x.nolcool.com | ✅ (6회) | 부분 인덱싱 진행 |
 | 9 | DuckDuckGo: 대전세븐나이트 | ❌ | (Bing 거치면 노출) |
 | 10 | Daum: 대전세븐나이트 | ❌ | 인덱스 전 |
 
@@ -177,7 +177,7 @@
 ### A. 네이버 서치어드바이저 (10분, 효과 큼) — 검증 완료, 다음 단계
 1. https://searchadvisor.naver.com 로그인
 2. 좌측 **요청 > 사이트맵 제출** → `sitemap.xml` 입력 → 제출
-3. 좌측 **요청 > 웹페이지 수집** → `https://seven1-2jn.pages.dev/` → 수집 요청
+3. 좌측 **요청 > 웹페이지 수집** → `https://x.nolcool.com/` → 수집 요청
 4. (선택) **간편등록**에서 사이트 정보·카테고리 입력
 
 ### B. 구글 서치 콘솔 (10분, 효과 큼) — 검증 완료, 다음 단계
@@ -192,7 +192,7 @@
 - **네이버는 자기 플랫폼 링크를 매우 빠르게 인덱싱 → 이쪽이 끌려옴**
 
 ### D. 고유 도메인 (선택, 강력 추천)
-- `seven1-2jn.pages.dev` 임시 주소 → 검색 점수 페널티 있음
+- `x.nolcool.com` 임시 주소 → 검색 점수 페널티 있음
 - 가비아/카페24에서 1~2만원/년
 - 추천: `daejeon-seven.com`, `dj-monkey.kr`, `seven7.kr`
 - 구매 후 *"도메인 [구매주소] 연결해줘"* → CF Pages 연결 작업
@@ -279,7 +279,7 @@ seven/
 - **매장**: 대전세븐나이트 (대전광역시 서구 둔산동)
 - **담당 W.T**: 영탁
 - **전화**: 010-7770-0869 (24시간, 모든 페이지에서 tel: 자동연결)
-- **메인 도메인**: https://seven1-2jn.pages.dev/
+- **메인 도메인**: https://x.nolcool.com/
 - **GitHub**: https://github.com/theassetsquare-svg/seven
 - **호스팅**: Cloudflare Pages (자동배포, main 푸시 → 10초 내 반영)
 - **Naver 검증코드**: `REPLACE_WITH_NAVER_CODE (발급 후 교체)`

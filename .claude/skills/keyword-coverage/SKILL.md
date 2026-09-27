@@ -46,7 +46,7 @@ description: 타겟 키워드의 사이트 내 노출 분석 — title/H1/H2/본
 ## 자동 분석 스크립트
 
 ```bash
-DOMAIN='https://seven1-2jn.pages.dev'
+DOMAIN='https://x.nolcool.com'
 KEYWORD='대전세븐나이트'
 
 curl -s $DOMAIN/ > /tmp/page.html
@@ -81,7 +81,7 @@ echo "img alt:      $(grep -oP 'alt="[^"]*"' /tmp/page.html | grep -c "$KEYWORD"
 ## 키워드 밀도 (density) 계산
 
 ```bash
-DOMAIN='https://seven1-2jn.pages.dev'
+DOMAIN='https://x.nolcool.com'
 KEYWORD='대전세븐나이트'
 
 body=$(curl -s $DOMAIN/ | sed 's/<[^>]*>//g; s/[[:space:]]\+/ /g')

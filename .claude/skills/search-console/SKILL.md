@@ -28,7 +28,7 @@ git add index.html && git commit -m "검증코드 적용" && git push
 ### A. 사이트 등록
 1. https://searchadvisor.naver.com 접속 (네이버 로그인)
 2. 우측 상단 "사이트 등록" 또는 "웹마스터 도구"
-3. URL: `https://seven1-2jn.pages.dev/` 입력
+3. URL: `https://x.nolcool.com/` 입력
 4. 소유 확인 방식: **"HTML 태그"** 선택 (가장 간편)
 5. 표시되는 메타 태그에서 `content="..."` 부분 **복사**
 6. 클로드한테: *"네이버 검증코드 [붙여넣기] 박아줘"* → 자동 push
@@ -42,7 +42,7 @@ git add index.html && git commit -m "검증코드 적용" && git push
 
 ### C. 수집 요청
 1. 좌측 메뉴 → **"요청" → "웹페이지 수집"**
-2. URL: `https://seven1-2jn.pages.dev/` 입력 → 확인
+2. URL: `https://x.nolcool.com/` 입력 → 확인
 3. 1일 50건 한도
 
 ### D. RSS 피드 (선택, 콘텐츠 사이트면)
@@ -57,7 +57,7 @@ git add index.html && git commit -m "검증코드 적용" && git push
 1. https://search.google.com/search-console 접속 (구글 로그인)
 2. 좌측 상단 속성 셀렉터 → "속성 추가"
 3. **"URL 접두어"** 선택 (도메인 전체보다 간편)
-4. URL: `https://seven1-2jn.pages.dev/` 입력
+4. URL: `https://x.nolcool.com/` 입력
 5. 소유권 확인 방식: **"HTML 태그"** (구글 권장 1순위)
 6. 표시되는 코드에서 `content="..."` 부분 **복사**
 7. 클로드한테: *"구글 검증코드 [붙여넣기] 박아줘"* → 자동 push
@@ -67,7 +67,7 @@ git add index.html && git commit -m "검증코드 적용" && git push
 좌측 메뉴 → **"색인 → Sitemaps"** → "새 사이트맵 추가" → `sitemap.xml` 입력
 
 ### C. URL 검사 (색인 요청)
-1. 상단 검색창에 `https://seven1-2jn.pages.dev/` 입력
+1. 상단 검색창에 `https://x.nolcool.com/` 입력
 2. "URL이 Google에 등록되어 있지 않음" → "색인 생성 요청" 클릭
 3. 1일 10건 한도
 
@@ -93,8 +93,8 @@ git add index.html && git commit -m "검증코드 적용" && git push
 
 | 항목 | 시기 | 확인 방법 |
 |---|---|---|
-| 네이버 색인 진입 | 등록 후 3~7일 | site:seven1-2jn.pages.dev (네이버 검색) |
-| 구글 색인 진입 | 등록 후 1~7일 | site:seven1-2jn.pages.dev (구글 검색) |
+| 네이버 색인 진입 | 등록 후 3~7일 | site:x.nolcool.com (네이버 검색) |
+| 구글 색인 진입 | 등록 후 1~7일 | site:x.nolcool.com (구글 검색) |
 | 키워드 첫 노출 | 등록 후 2~4주 | "대전세븐나이트 영탁" 검색 |
 | 1페이지 진입 | 등록 후 4~12주 | 상동 (백링크·트래픽 신호 따라) |
 

@@ -13,7 +13,7 @@ description: 같은 키워드 노린 멀티사이트(satellite) SEO에서 중복
 
 | 차원 | 1번 사이트 (예) | 2번 사이트 (차별화 예) |
 |---|---|---|
-| **도메인** | seven-97b.pages.dev | seven1-2jn.pages.dev |
+| **도메인** | seven-97b.pages.dev | x.nolcool.com |
 | **W.T 닉네임** | 영탁 | 영탁 (필수 고정인 경우 다른 차원에서 차별화 강화) |
 | **톤** | 정보·예약형 ("전화 한 통이면 끝") | 후기·증명형 ("247건 후기, 평균 매칭 3분") |
 | **H1** | "4인1조 W.T 즉시 부킹" | "둔산동 직접 가본 사람만 아는 곳" |
@@ -98,14 +98,14 @@ description: 같은 키워드 노린 멀티사이트(satellite) SEO에서 중복
 ```bash
 # 두 사이트의 JSON-LD 추출
 curl -s https://seven-97b.pages.dev/ | grep -oP 'application/ld\+json"\>\K[^<]+' > /tmp/site1-jsonld.json
-curl -s https://seven1-2jn.pages.dev/ | grep -oP 'application/ld\+json"\>\K[^<]+' > /tmp/site2-jsonld.json
+curl -s https://x.nolcool.com/ | grep -oP 'application/ld\+json"\>\K[^<]+' > /tmp/site2-jsonld.json
 diff <(jq -S . /tmp/site1-jsonld.json) <(jq -S . /tmp/site2-jsonld.json) | head -50
 ```
 
 ### B. 본문 단어 겹침률
 ```bash
 curl -s https://seven-97b.pages.dev/ | grep -oP '<h[12]>[^<]+' | sort > /tmp/site1-headings
-curl -s https://seven1-2jn.pages.dev/ | grep -oP '<h[12]>[^<]+' | sort > /tmp/site2-headings
+curl -s https://x.nolcool.com/ | grep -oP '<h[12]>[^<]+' | sort > /tmp/site2-headings
 comm -12 /tmp/site1-headings /tmp/site2-headings | wc -l
 # 결과: 겹치는 헤딩 수 / 5 미만이어야 함
 ```

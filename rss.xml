@@ -5,8 +5,8 @@
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>대전세븐나이트 영탁 직통 — 둔산동 1등 부킹률</title>
-    <link>https://seven1-2jn.pages.dev/</link>
-    <atom:link href="https://seven1-2jn.pages.dev/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://x.nolcool.com/</link>
+    <atom:link href="https://x.nolcool.com/rss.xml" rel="self" type="application/rss+xml" />
     <description>대전 둔산동 세븐나이트 영탁 직통 라인. 4인1조 즉시 부킹·합석·테이블 예약. 평균 매칭 3분, 누적 후기 247건, 평점 4.9.</description>
     <language>ko-KR</language>
     <copyright>© 대전세븐나이트 영탁</copyright>
@@ -14,9 +14,9 @@
     <lastBuildDate>Thu, 10 Sep 2026 03:24:49 +0900</lastBuildDate>
     <ttl>60</ttl>
     <image>
-      <url>https://seven1-2jn.pages.dev/og.png</url>
+      <url>https://x.nolcool.com/og.png</url>
       <title>대전세븐나이트 영탁 직통</title>
-      <link>https://seven1-2jn.pages.dev/</link>
+      <link>https://x.nolcool.com/</link>
       <width>1200</width>
       <height>1200</height>
     </image>
@@ -27,8 +27,8 @@
 
     <item>
       <title>대전세븐나이트 부킹 3분 매칭 | 토요일 자리 보장 — 영탁 직통</title>
-      <link>https://seven1-2jn.pages.dev/</link>
-      <guid isPermaLink="true">https://seven1-2jn.pages.dev/</guid>
+      <link>https://x.nolcool.com/</link>
+      <guid isPermaLink="true">https://x.nolcool.com/</guid>
       <pubDate>Thu, 10 Sep 2026 03:24:49 +0900</pubDate>
       <dc:creator>영탁</dc:creator>
       <category>대전세븐나이트</category>

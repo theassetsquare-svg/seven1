@@ -1,6 +1,6 @@
 ---
 name: playwright
-description: 실제 브라우저(Playwright MCP)로 라이브 사이트 검증, 스크린샷, SEO 메타·JSON-LD 렌더 확인, 모바일 전화 CTA 테스트, OG 미리보기, 접근성·성능 체크. Targets https://seven1-2jn.pages.dev/. Use when user asks 사이트 확인, 스크린샷, 모바일 미리보기, OG 미리보기, lighthouse, 접속 테스트, 렌더링 확인, playwright, 라이브 검증.
+description: 실제 브라우저(Playwright MCP)로 라이브 사이트 검증, 스크린샷, SEO 메타·JSON-LD 렌더 확인, 모바일 전화 CTA 테스트, OG 미리보기, 접근성·성능 체크. Targets https://x.nolcool.com/. Use when user asks 사이트 확인, 스크린샷, 모바일 미리보기, OG 미리보기, lighthouse, 접속 테스트, 렌더링 확인, playwright, 라이브 검증.
 ---
 
 # Playwright MCP — 실전 매뉴얼
@@ -11,7 +11,7 @@ description: 실제 브라우저(Playwright MCP)로 라이브 사이트 검증, 
 
 ### 1. 라이브 사이트 시각 확인
 ```
-browser_navigate → https://seven1-2jn.pages.dev/
+browser_navigate → https://x.nolcool.com/
 browser_wait_for(text="010-7770-0869")
 browser_take_screenshot(filename="live-mobile.png", fullPage=true)
 ```
@@ -47,7 +47,7 @@ browser_evaluate(function="() => ({
 
 ### 4. OG 미리보기 (카카오톡/페북이 보는 그대로)
 ```
-browser_navigate → https://seven1-2jn.pages.dev/og.png
+browser_navigate → https://x.nolcool.com/og.png
 browser_take_screenshot(filename="og-preview.png")
 ```
 실측 픽셀 확인 (1200×1200 1:1):
@@ -91,7 +91,7 @@ const paths = ['/', 'robots.txt', 'sitemap.xml', 'llms.txt', 'site.webmanifest',
                'og.png', 'favicon.svg', 'favicon.ico', 'apple-touch-icon.png',
                'icon-192.png', 'icon-512.png', 'main.js', 'style.css'];
 for (const p of paths) {
-  browser_navigate → https://seven1-2jn.pages.dev/${p}
+  browser_navigate → https://x.nolcool.com/${p}
   // 200 확인, 콘텐츠 확인
 }
 ```

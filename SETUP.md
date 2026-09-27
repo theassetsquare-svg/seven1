@@ -33,7 +33,7 @@ git push -u origin main
 ```
 
 **이후 변수만 바꾸기** — Claude Code 새 세션에서 아래 한 줄 :
-> *"index.html, style.css, og.png, favicon, llms.txt, sitemap.xml 모두에서 도메인 `seven1-2jn.pages.dev`를 `<새도메인>` 으로, 전화번호 `010-7770-0869`을 `<새번호>` 으로, 매장명·닉네임 `대전세븐나이트 / 영탁`을 `<새매장 / 새닉>` 으로 바꿔서 푸시해줘. og.png과 favicon은 새 정보로 다시 그려줘."*
+> *"index.html, style.css, og.png, favicon, llms.txt, sitemap.xml 모두에서 도메인 `x.nolcool.com`를 `<새도메인>` 으로, 전화번호 `010-7770-0869`을 `<새번호>` 으로, 매장명·닉네임 `대전세븐나이트 / 영탁`을 `<새매장 / 새닉>` 으로 바꿔서 푸시해줘. og.png과 favicon은 새 정보로 다시 그려줘."*
 
 ---
 
@@ -89,7 +89,7 @@ https://github.com/theassetsquare-svg/seven
 
 | 변수 | 기존 값 | 새 값으로 |
 |---|---|---|
-| 도메인 | `seven1-2jn.pages.dev` | `<새도메인>` |
+| 도메인 | `x.nolcool.com` | `<새도메인>` |
 | 매장명 | `대전세븐나이트` | `<새매장>` |
 | W.T 닉 | `영탁` | `<새닉>` |
 | 전화번호 | `010-7770-0869` | `<새번호>` |
@@ -233,7 +233,7 @@ seven/
 ## 🔑 참고: 현재 사이트의 주요 정보
 
 ```
-도메인:     https://seven1-2jn.pages.dev/
+도메인:     https://x.nolcool.com/
 GitHub:     https://github.com/theassetsquare-svg/seven
 매장명:     대전세븐나이트
 W.T 닉:     영탁

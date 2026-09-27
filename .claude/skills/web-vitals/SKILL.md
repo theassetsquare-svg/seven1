@@ -102,7 +102,7 @@ Cloudflare는 자동. 별도 설정 X. 다른 호스팅이면:
 
 ## 측정 도구
 
-- **PageSpeed Insights**: https://pagespeed.web.dev/?url=https://seven1-2jn.pages.dev/
+- **PageSpeed Insights**: https://pagespeed.web.dev/?url=https://x.nolcool.com/
 - **Lighthouse** (Chrome DevTools)
 - **WebPageTest**: https://www.webpagetest.org/
 - **Cloudflare Web Analytics** (이미 활성화돼 있다면)

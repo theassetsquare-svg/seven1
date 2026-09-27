@@ -7,7 +7,7 @@ description: Cloudflare Pages 자동 배포 흐름 — git push → CF auto-buil
 
 이 프로젝트는 **GitHub → Cloudflare Pages 자동 배포** 연결됨:
 - Repo: `https://github.com/theassetsquare-svg/seven1`
-- Live: `https://seven1-2jn.pages.dev/`
+- Live: `https://x.nolcool.com/`
 - Build: 정적 사이트, 빌드 명령 없음 (HTML/CSS/JS 그대로)
 
 ## 0. 사전 1회 설정 (이미 완료)
@@ -16,7 +16,7 @@ description: Cloudflare Pages 자동 배포 흐름 — git push → CF auto-buil
 2. GitHub 계정 연결 → 저장소 `seven1` 선택
 3. Build settings: **Framework preset = None**, Build command 비움, Output directory `/`
 4. Production branch: `main`
-5. 자동 발급되는 도메인: `seven1-2jn.pages.dev`
+5. 자동 발급되는 도메인: `x.nolcool.com`
 
 ## 1. 일반 배포 흐름
 
@@ -33,7 +33,7 @@ push 시 GitHub webhook → Cloudflare Pages 자동 트리거. 별도 액션 불
 
 ### C. 배포 완료 polling
 ```bash
-DOMAIN='https://seven1-2jn.pages.dev'
+DOMAIN='https://x.nolcool.com'
 for i in 1 2 3 4 5 6; do
   sleep 15
   status=$(curl -s -o /dev/null -w "%{http_code}" $DOMAIN/)
@@ -49,7 +49,7 @@ done
 ## 2. 14 자원 풀 검증 (배포 직후)
 
 ```bash
-DOMAIN='https://seven1-2jn.pages.dev'
+DOMAIN='https://x.nolcool.com'
 echo "=== 14 자원 라이브 검증 ==="
 for path in / robots.txt sitemap.xml llms.txt site.webmanifest og.png \
             favicon.svg favicon.ico apple-touch-icon.png icon-192.png \
@@ -67,7 +67,7 @@ printf "  %-50s %s\n" "$DOMAIN/$KEY" "$res"
 ## 3. _headers 정책 검증 (보안·캐시 8종)
 
 ```bash
-curl -sI https://seven1-2jn.pages.dev/ | grep -iE \
+curl -sI https://x.nolcool.com/ | grep -iE \
   'strict-transport|x-content|x-frame|referrer|permissions|cross-origin|cache-control'
 ```
 
@@ -140,4 +140,4 @@ git 변경 없이 빌드만 다시:
 - **Cache-Control이 `/*`에도 있고 `/index.html`에도 있으면** → CF가 둘 다 보내고 더 엄격한 게 적용. `/*`에는 안 두는 게 안전
 - **GitHub force-push 후 CF는 자동으로 재배포 안 할 수 있음** — 강제 재배포 필요할 때 있음
 - **빌드 실패해도 라이브는 이전 버전 유지** — 다행
-- **Custom domain 추가 시** → DNS 설정 (CNAME `seven1` → `seven1-2jn.pages.dev`) + CF에서 도메인 추가
+- **Custom domain 추가 시** → DNS 설정 (CNAME `seven1` → `x.nolcool.com`) + CF에서 도메인 추가

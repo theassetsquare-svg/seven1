@@ -69,7 +69,7 @@ jobs:
         if: steps.commit.outputs.no_changes == 'false'
         run: |
           KEY="83d34f87945b3ee6beb382d9c7b1d2f9"
-          HOST="seven1-2jn.pages.dev"
+          HOST="x.nolcool.com"
           URL="https://${HOST}/"
           KEY_LOC="https://${HOST}/${KEY}.txt"
           # api.indexnow.org가 자동으로 Bing/Yandex/Seznam 등에 전파
@@ -85,7 +85,7 @@ jobs:
         run: |
           # Google deprecated 했지만 일부 보조 시그널로 유지
           curl -s -o /dev/null -w "Google %{http_code}\n" \
-            "https://www.google.com/ping?sitemap=https://seven1-2jn.pages.dev/sitemap.xml" || true
+            "https://www.google.com/ping?sitemap=https://x.nolcool.com/sitemap.xml" || true
 
       - name: Summary
         run: |
